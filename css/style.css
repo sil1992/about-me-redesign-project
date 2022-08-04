@@ -78,13 +78,46 @@ body {
 
 /* menu-bar-1 */
 .menu-bar-1 {
-  border: red solid 1px;   
+  line-height: 100px;
+  border: gold solid 1px;   
 }
 
-.top-search {
-  
+.top-logo {
+  margin: 10px 3px;
+  height: 32px;
 }
 
+.search-box {
+  border: #60a9a6 solid 3px;
+  border-radius: 99px;
+  width: 556px;
+  height: 39px;
+  margin: 30px 150px;
+}
+
+.search-box-text {
+  color: #c1c1c1;
+  font-weight: 400;
+  line-height: 32px;
+  margin-left: 50px;
+  margin-right: 100px;
+  border: red solid 1px;  
+}
+
+.search-box-icon > img {
+  width: 30px;
+  height: 30px;
+  border: red solid 1px;    
+}
+
+.menu-bar-1 > nav > ul > li > img {
+  width: 10%;
+  height: 10%;
+  display: block;
+  border: red solid 1px;     
+}
+
+/* menu-bar-2 */
 .menu-bar-2 {
   border: blue solid 1px;      
 }
