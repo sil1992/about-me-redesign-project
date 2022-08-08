@@ -55,39 +55,39 @@ body {
 }
 
 /* top-banner */
-.top-banner {
+.top_banner {
   line-height: 50px;
   background-color: #101010;
 }
 
-.top-banner > a {
+.top_banner > a {
   font-size: 14px;
   font-weight: 300;
   color: #EEEBEB;
 }
 
 /* top-bar */
-.top-bar > .top-menu-1 {
+.top_bar > .top_menu-1 {
   line-height: 50px;
 }
 
-.top-bar > .top-menu-1 a {
+.top_bar > .top_menu_1 a {
   font-size: 12px;
   margin-left: 32px;
 }
 
 /* menu-bar-1 */
-.menu-bar-1 {
+.menu_bar_1 {
   line-height: 100px;
   border: gold solid 1px;   
 }
 
-.top-logo {
+.menu_bar_1 > h1 {
   margin: 10px 3px;
   height: 32px;
 }
 
-.search-box {
+.search_box {
   border: #60a9a6 solid 3px;
   border-radius: 99px;
   width: 556px;
@@ -95,34 +95,65 @@ body {
   margin: 30px 150px;
 }
 
-.search-box-text {
-  color: #c1c1c1;
-  font-weight: 400;
+.search_box_text {
   line-height: 32px;
   margin-left: 50px;
-  margin-right: 100px;
-  border: red solid 1px;  
+  margin-right: 50px;
+  color: #c1c1c1;
+  font-weight: 400;
+  margin-right: 170px;
+  margin-bottom: 50px;
 }
 
-.search-box-icon > img {
-  width: 30px;
-  height: 30px;
-  border: red solid 1px;    
+#searchSubmit {
+  position: absolute;
+  top: 112px;
+  right: 420px;
+  width: 25px;
+  height: 25px;
+  background-image: url(https://i.postimg.cc/k5Nfb73n/image.png);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;  
+  text-indent: -9999px;
+  opacity: 50%;
 }
 
-.menu-bar-1 > nav > ul > li > img {
-  width: 10%;
-  height: 10%;
+button {
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.menu_bar_1 > .menu_area img {
+  width: 21px;
+  height: 21px;
   display: block;
-  border: red solid 1px;     
+  border: red solid 1px;
+  float: left;
+  position: absolute;
 }
+
+#Customer_Service {
+  position: absolute;
+  top: 105px;
+  right: 200px;
+
+}~
 
 /* menu-bar-2 */
-.menu-bar-2 {
+.menu_bar_2 {
   border: blue solid 1px;      
 }
 
-.menu-bar-2 a {
+.menu_bar_2 a {
   display: inline-block;
+  margin-right: 113px;
   border: red solid 1px;      
 }
