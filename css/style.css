@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap');
 
-/* normalize */
+/* 노멀라이즈 */
 body,
 ul,
 li {
@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-/* library */
+/* 라이브러리 */
 .inline-grid {
   font-size: 0;
 }
@@ -24,7 +24,19 @@ a {
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
-}  
+}
+
+.border-red {
+  border: 10px solid red;
+}
+
+.border-blue {
+  border: 10px solid blue;
+}
+
+.border-gold {
+  border: 10px solid gold;
+}
 
 .text-center {
   text-align: center;
@@ -43,7 +55,7 @@ a {
   margin-right: auto;
 }
 
-/* custom */
+/* 커스텀 시작 */
 .con {
   width: 1200px;
   color: #333333;
@@ -66,110 +78,91 @@ body {
   color: #EEEBEB;
 }
 
-/* top-bar */
-.top_bar > .top_menu-1 {
-  line-height: 50px;
+/* 탑 바 */
+.top-bar {
 }
 
-.top_bar > .top_menu_1 a {
+.con > .top-bar > ul li {
+  padding: 0 12px;
   font-size: 12px;
-  margin-left: 32px;
+  font-weight: 300;
+  text-align: right;
+  margin-top: 10px;
 }
 
-/* menu-bar-1 */
-.menu_bar_1 {
-  line-height: 100px;
-  border: gold solid 1px;   
+/* 호버된 탑바 메뉴 아이템 */
+.con > .top-bar > ul > li:hover {
+  color: #9b9b9b;
 }
 
-.menu_bar_1 > h1 {
+/* 탑 로고 */
+.con > .top-logo {
   margin: 10px 3px;
   height: 32px;
+  text-align: left;
 }
 
-.search_box {
-  border: #60a9a6 solid 3px;
-  border-radius: 99px;
-  width: 556px;
-  height: 39px;
-  margin: 30px 150px;
+/* 호버된 탑 로고 이미지 */
+.con > .top-logo > a:hover > img {
+  opacity: 55%;
 }
 
-.search_box_text {
-  line-height: 32px;
-  margin-left: 50px;
-  margin-right: 50px;
-  color: #c1c1c1;
-  font-weight: 400;
-  margin-right: 170px;
-  margin-bottom: 50px;
+/* top-menu-2 */
+.top-menu-2 {
+  width: 100%;
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 2px solid #333333;
+  padding: 10px 0px;
 }
 
-#searchSubmit {
-  position: absolute;
-  top: 112px;
-  right: 420px;
-  width: 25px;
-  height: 25px;
-  background-image: url(https://i.postimg.cc/k5Nfb73n/image.png);
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-size: initial;
-  background-repeat: no-repeat;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial;  
-  text-indent: -9999px;
-  opacity: 50%;
+.top-menu-2 li {
+  position: relative;
 }
 
-button {
-  border: 0;
-  padding: 0;
-  box-shadow: none;
-  cursor: pointer;
-}
-
-.menu_bar_1 > .menu_area img {
-  width: 21px;
-  height: 21px;
-  display: block;
-  border: red solid 1px;
-  float: left;
-  position: absolute;
-}
-
-#Customer_Service {
-  position: absolute;
-  top: 105px;
-  right: 200px;
-}~
-
-/* menu-bar-2 */
-.line_1 {
-  background-color: #c1c1c1;
-  height: 1px;
-  width: auto;
-}
-
-.menu_bar_2 {
-  border: blue solid 1px;      
-}
-
-.menu_bar_2 a {
-  display: inline-block;
+/* top-menu-2의 모든 아이템 텍스트 */
+.top-menu-2 li > a {
+  font-size: 16px;
+  color: #333333; 
+  white-space: nowrap;
   text-align: center;
-  margin-right: 113px;
-  border: red solid 1px;      
+  margin: 0 113px;
 }
 
-.main_slider {
+/* top-menu-2의 서브메뉴-1 */
+.top-menu-2 > ul > li > ul {
+  display: none;
+  position: absolute;
+  top: 150%;
+  left: 40%;
+  width: 100%;
+} 
+
+/* 호버된 서브메뉴-1 */
+.top-menu-2 > ul > li:hover > ul {
+  display: block;
+  border: 1px solid #e1e0e0;
+  text-align: left;
+  background-color: white; 
+}
+
+.top-menu-2 > ul > li > ul a {
+  margin: 10px 30px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* 호버된 서브메뉴-2 */
+.top-menu-2 > ul > li > ul:hover > li {
+  display: block;
+}
+
+
+/* 탑 배너 */
+.con > .top-bn {
+  text-align: center;
+  display: block;
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  text-align: center;
-  margin-top:2px;
-  margin-left: 0 auto;
-  display: inline-block;
-
 }
+/* 커스텀 끝 */
