@@ -144,16 +144,32 @@ button {
   position: absolute;
   top: 105px;
   right: 200px;
-
 }~
 
 /* menu-bar-2 */
+.line_1 {
+  background-color: #c1c1c1;
+  height: 1px;
+  width: auto;
+}
+
 .menu_bar_2 {
   border: blue solid 1px;      
 }
 
 .menu_bar_2 a {
   display: inline-block;
+  text-align: center;
   margin-right: 113px;
   border: red solid 1px;      
+}
+
+.main_slider {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top:2px;
+  margin-left: 0 auto;
+  display: inline-block;
+
 }

@@ -1,60 +1,191 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>어바웃미 공식쇼핑몰 :: 어바웃미 | ABOUT ME</title>
-    <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body> 
-    <div class="top_banner text-center">
-        <a href="">친구에게 About Me를 추천해주세요! 친구를 초대 할 때마다 친구도 나도 3,000M 적립</a>
-    </div>
-    <header class="con">
-        <div class="top_bar text-right">
-          <ul class="inline-grid top_menu_1">
-            <li><a href="">LOGIN</a></li>
-            <li><a href="">JOIN US</a></li>
-            <li><a href="">CART-0</a></li>
-            <li><a href="">COMMUNITY</a></li>
-          </ul>
-        </div>
-    
-        <div class="menu_bar_1 inline-grid">
-          <h1>
-            <a href="">
-              <img src="https://i.postimg.cc/kGvdNk4W/image.png" alt="어바웃미">
-            </a>
-          </h1>
-          <div class="search_box">
-            <div class="search_area">
-              <div class="search_box_text">
-                <div>💓 “짠하게 짠” 쌀막걸리 라인 출시</div>
-              </div>
-              <button id="searchSubmit">검색</button>
-            </div>
-          </div>
-          <ul class="menu_area">
-            <li id="Recent_Products"><img src="https://i.postimg.cc/SRDRgt9H/image.png"></li>
-            <li id="Customer_Service"><img src="https://i.postimg.cc/pr2yYtmD/image.png"></li>
-            <li id="q_and_a"><a>Q&A</a></li>
-          </ul>
-        </div>
+   <head>      
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>어바웃미 공식쇼핑몰 :: 어바웃미 | ABOUT ME</title>
 
-        <div class="line_1"></div>
-        <nav class="menu_bar_2">
-            <ul class="inline-grid text-center">
-              <li><a href="">SHOPPING</a></li>
-              <li><a href="">SPECIAL PRICE</a></li>
-              <li><a href="">BEST</a></li>
-              <li><a href="">VEGAN BEAUTY</a></li>
-              <li><a href="">EVENT</a></li>
-              <li><a href="">BRAND</a></li>
-            </ul>
-        </nav>
-      </header>  
-        
-</body>
-</html>
+   <script src="js/script.js" defer></script>
+   <link rel="stylesheet" href="css/style.css">
+
+   <link rel="stylesheet" href="https://www.oliveyoung.co.kr/pc-static-root/css/style.css?dumm=202208080001"/>
+
+   <script>
+      var _tmsPushUrl = "https://pmsg.oliveyoung.co.kr/msg-api/user/mkt-flag";
+      var _baseUrl = 'https://www.oliveyoung.co.kr/store/';
+      var _plainUrl = 'https://www.oliveyoung.co.kr/store/';
+      var _secureUrl = 'https://www.oliveyoung.co.kr/store/';
+      var _jsUrl = 'https://www.oliveyoung.co.kr/pc-static-root/js/';
+      var _cssUrl = 'https://www.oliveyoung.co.kr/pc-static-root/css/';
+      var _imgUrl = 'https://image.oliveyoung.co.kr/pc-static-root/image/';
+      var _imgUrlLocale = 'https://image.oliveyoung.co.kr/pc-static-root/image/ko/';
+      var _stampEvtUrl = '500000100140038';
+      var _goodsImgUploadUrl = 'https://image.oliveyoung.co.kr/uploads/images/goods/';
+      var _cabUrl = 'https://image.oliveyoung.co.kr/pc-static-root/cab/';
+      var _isLogin = false;
+      var _genSctCd  = 'null' == 'A' ? 'M' :  ('null' == 'B' ? 'F' : '');
+      var _mainUrl = 'main/main.do';
+      var _goodsImg85 = '85';
+      var _gdasImgUploadUrl = 'https://image.oliveyoung.co.kr/uploads/images/gdasEditor/';
+      var _profileImgUploadUrl = 'https://image.oliveyoung.co.kr/uploads/images/mbrProfile/';
+      var _memberJoinUrl ='https://www.cjone.com/cjmweb/join.do?coopco_cd=7030&brnd_cd=3000&mcht_no=3000';
+      var _cdnImgUrl = '//image.oliveyoung.co.kr/uploads/';
+      var _fileUploadUrl = 'https://image.oliveyoung.co.kr/uploads/images/';
+      var _currentUrl = '/main/main.do';
+      
+      var _eplgUploadUrl = 'https://image.oliveyoung.co.kr/uploads/images/epilogue/';  //멤버십라운지 에필로그 추가 
+      
+      var _redirectFoBaseUrl = 'https://www.oliveyoung.co.kr/store'; // ston redirect 처리위해 추가
+      var _redirectMoBaseUrl = 'https://m.oliveyoung.co.kr/m'; // ston redirect 처리위해 추가
+      var _redirectMaBaseUrl = 'https://ma.oliveyoung.co.kr/m'; // ston redirect 처리위해 추가
+      
+      var _stonUseYnReqHeader = 'N'; // ston redirect 처리위해 추가
+
+      var _offlineGoodsNo = 'A000000000000';
+
+      var _templateUrl = 'https://www.oliveyoung.co.kr/pc-static-root/template/';
+   </script>
+
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/common/publish/jquery-1.9.1.min.js"></script>
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/common/publish/prefixfree.min.js"></script>
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/common/publish/slick.min.js"></script>
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/common/publish/common.js?dumm=202208080001"></script>
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/netfunnel/netfunnel.js?dumm=202208080001" charset="UTF-8"></script>
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/netfunnel/pc_skin.js?dumm=202208080001" charset="UTF-8"></script>    
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/common/common.utils.js" charset="UTF-8"></script>
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/todaydelivery/todaydelivery.js" charset="UTF-8"></script>
+   <script type="text/javascript" src="https://www.oliveyoung.co.kr/pc-static-root/js/common/publish/jquery.mCustomScrollbar.concat.min.js"></script>
+  
+   <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+   
+
+
+   <script src="js/script.js" defer></script>
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="top_banner text-center">
+    <a href="">친구에게 About Me를 추천해주세요! 친구를 초대 할 때마다 친구도 나도 3,000M 적립</a>
+  </div>
+
+
+   <div id="Header">
+      <div class="top_util">
+         <ul class="menu_list" id="menu_list_header">
+            <li class="join"><a href="">LOGIN</a></li>
+            <li class="login"><a href="">JOIN US</a></li>
+            <li class="cart"><a href="">CART-0</a></li>
+            <li class="community"><a href="">COMMUNITY</a></li>
+         </ul>
+      </div>
+      <div class="header_inner">
+        <h1><a href=""><img src="https://i.postimg.cc/kGvdNk4W/image.png" alt="어바웃미" /></a></h1>
+         
+        <div class="search_box" id="w_search_box">
+          <input type="hidden" name="chkButton" id="chkButton" value="" />      
+            <input type="text" id="query" name="" value="" class="inp_placeholder"  data-placeholder="💓 “짠하게 짠” 쌀막걸리 라인 출시">
+
+            <button id="searchSubmit">검색</button>
+
+            <!-- 검색 레이어 영역 -->
+            <div class="search_layer">
+               <div class="layer_inner">
+                  <!-- 자동완성기능 영역 -->
+                  <div class="auto_search_cont">
+                     <div class="brand_area" id="ark_brand"></div>                     
+                     <div class="auto_list" id="ark_w"></div>
+                  </div>
+                  <!--// 자동완성기능 영역 -->
+               
+                  <!-- 최근 검색어 -->                  
+                  <a href="#" class="search_tab tab01 on" id="searchRecent" >최근 검색어</a>
+                  <div class="search_tab_cont" id="recent_cont">
+                     <ul id="mykeyword"></ul>
+                     <div class="search_set_area">
+                        <a href="#" class="sch_all_del" onclick="javascript:deleteCookies();">전체 삭제</a>                                                                  
+<!-- <a href="#" class="sch_save"></a> -->
+                              <a href="#" class="sch_save"></a>                                                      
+                     </div>
+                  </div>
+                  <!--// 최근 검색어 -->
+                  <!-- 급상승 검색어 -->
+                  <a  href="#" class="search_tab tab02" id="searchPop" >급상승 검색어</a>
+                  <div class="search_tab_cont sharp_rise" id="w_pop_cont">
+                     <ul id="mainPopword">
+                     </ul>
+                     <div class="search_set_area"> 
+                        <a href="#" class="sch_pop_close">닫기</a>
+                     </div>
+                  </div>
+                  <!--// 인기 검색어 -->
+                  <!-- SCP추가 -->
+                  <div class="scp_cont" id="scp_cont_id">
+                  </div>
+                  <!-- //SCP추가 -->
+               </div>
+            </div>
+            <!--// 검색 레이어 영역 -->
+         </div>
+         <!--// 검색영역 -->
+         
+         <ul class="mymenu_area">
+            <li class="Recent_Products"><img src="https://i.postimg.cc/SRDRgt9H/image.png"></li>
+            <li class="store ">
+               <a href="#" class="mymenu_layer" title="관심 매장소식 자세히보기 열기/닫기">Q&A</a>
+               <div class="alim_box">
+                  <p class="store_desc"><span>로그인</span>하시면 자주가는 매장을 <br />관심 매장으로 설정 할 수 있습니다.</p>
+                  <button class="mymenu_btn" onClick="javascript:common.link.moveLoginPage();">로그인</button>
+               </div>
+            </li>
+            <li class="recent">
+               <a href="javascript:;" class="mymenu_layer" title="최근 본 상품 자세히보기 열기/닫기"><img src="https://i.postimg.cc/SRDRgt9H/image.png"></a>
+               <div class="recent_prd_box" style="min-height:510px;">
+                  <p class="recent_tit">전체 <span>0</span>개
+                  
+                  <div class="no_data" style="display:none;">
+                     최근 본 상품이 없습니다.
+                  </div>
+               </div>
+            </li>
+         </ul>
+         
+      </div>
+      
+      <div class="header_design_area"></div>
+      
+   </div>
+   
+
+
+            
+   <div id="Gnb" class="main gen1">
+      <div id="gnbWrap">
+         <ul class="gnb_menu_list">
+            <li style="">
+               <a href="" data-attr="쇼핑"><span>SHOPPING</span></a>
+            </li>
+
+            <li style="">
+               <a href="" data-attr="스페셜"><span>SPECIAL PRICE</span></a>
+            </li>
+
+            <li style="">
+              <a href="" data-attr="베스트"><span>BEST</span></a>
+           </li>
+
+           <li style="">
+            <a href="" data-attr="비건뷰티"><span>VEGAN BEAUTY</span></a>
+           </li>
+
+           <li style="">
+            <a href="" data-attr="이벤트"><span>EVENT</span></a>
+           </li>
+
+           <li style="">
+            <a href="" data-attr="브랜드"><span>BRAND</span></a>
+           </li>
+
+<!-- 메인 슬라이더 영역 -->
+<div class="main_slider"><img src="https://i.postimg.cc/L4GH7rK4/3.jpg"></div>
