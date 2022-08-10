@@ -14,6 +14,14 @@ a {
   text-decoration: none;
 }
 
+input {
+  border:none;
+}
+
+input:focus {
+  outline:none;
+}
+
 /* library */
 .inline-grid {
   font-size: 0;
@@ -129,6 +137,37 @@ body {
   opacity: 55%;
 }
 
+/* input */
+input {
+  border:3px solid #60A9A6;
+  border-radius:20px;
+  width: 400px;
+  padding:10px;
+}
+
+.input-box__placeholder {
+  position: relative;
+}
+
+.input-box__placeholder > label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translatey(-50%);
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.input-box__placeholder > label.focus {
+  display: none;
+}
+
+/* button */
+#searchSubmit {
+  margin-left: 140px;
+}
+
+
 /* top-menu-2 */
 .top-menu-2 {
   width: auto;
@@ -220,19 +259,19 @@ body {
 }
 
 @media ( max-width: 1000px ) {
-  .list1,.list2 .cell {
+  .list1,.list2,.list3 .cell {
     width: calc(100% / 3);
   }
 }
 
 @media ( max-width: 780px ) {
-  .list1.list2 .cell {
+  .list1,.list2,.list3 .cell {
     width: 50%;
   }
 }
 
 @media ( max-width: 480px ) {
-  .list1.list2 .cell {
+  .list1,.list2,.list3 .cell {
     width: 100%;
   }
 }
@@ -254,8 +293,8 @@ body {
  }
 }
 
-/* SPECIAL EVENT */
-.special-event {
+/* section_2 */
+.section_2, .section_3 {
   font-size: 33px;
   font-weight: 700;
   text-align: center;
@@ -280,9 +319,9 @@ body {
 
 .list2 .cell > .product-text {
   font-weight: 400;
+  color: #717171;
   text-align: center;
-  margin-top: 20px;
-  border: red solid 1px;
+  margin-top: 5px;
 }
 
 .list2 .row {
@@ -295,4 +334,38 @@ body {
   border-radius: 11px;
 }
 
+/* bn-2 */
+.bn-2 > img {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* list_3 */
+.list3 .cell {
+  width: 50%;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+} 
+
+.list3 .cell > .product-name {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.list3 .cell > .product-text {
+  font-weight: 400;
+  color: #717171;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.list3 .row {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 0;
+}
 /* 커스텀 끝 */
