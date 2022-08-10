@@ -197,7 +197,7 @@ body {
   width: 1200px;
 }
 
-/* 리스트 아이템 */
+/* list_1 */
 .list1 .cell {
   width: 25%;
   cursor: pointer;
@@ -220,19 +220,19 @@ body {
 }
 
 @media ( max-width: 1000px ) {
-  .list1 .cell {
+  .list1,.list2 .cell {
     width: calc(100% / 3);
   }
 }
 
 @media ( max-width: 780px ) {
-  .list1 .cell {
+  .list1.list2 .cell {
     width: 50%;
   }
 }
 
 @media ( max-width: 480px ) {
-  .list1 .cell {
+  .list1.list2 .cell {
     width: 100%;
   }
 }
@@ -260,6 +260,39 @@ body {
   font-weight: 700;
   text-align: center;
   margin: 100px 30px 0px 0px;
+}
+
+/* list_2 */
+.list2 .cell {
+  width: 33.333%;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+} 
+
+.list2 .cell > .product-name {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.list2 .cell > .product-text {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  border: red solid 1px;
+}
+
+.list2 .row {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 0;
+}
+
+.list2 .cell .img-box img {
+  border-radius: 11px;
 }
 
 /* 커스텀 끝 */
