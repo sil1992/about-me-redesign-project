@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap');
 
-/* 노멀라이즈 */
+/* normalize */
 body,
 ul,
 li {
@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-/* 라이브러리 */
+/* library */
 .inline-grid {
   font-size: 0;
 }
@@ -55,7 +55,7 @@ a {
   margin-right: auto;
 }
 
-/* 커스텀 시작 */
+/* Custom */
 .con {
   width: 1200px;
   color: #333333;
@@ -109,14 +109,16 @@ body {
 
 /* top-menu-2 */
 .top-menu-2 {
-  width: 100%;
+  width: auto;
   border-top: 1px solid #DFDFDF;
   border-bottom: 2px solid #333333;
-  padding: 10px 0px;
 }
 
 .top-menu-2 li {
   position: relative;
+}
+
+.top-menu-2 > ul {
 }
 
 /* top-menu-2의 모든 아이템 텍스트 */
@@ -125,7 +127,9 @@ body {
   color: #333333; 
   white-space: nowrap;
   text-align: center;
-  margin: 0 113px;
+  margin: 0 56px;
+  padding: 25px 0px;
+  display: block;
 }
 
 /* top-menu-2의 서브메뉴-1 */
@@ -158,11 +162,17 @@ body {
 
 
 /* 탑 배너 */
-.con > .top-bn {
+.con > .top-slider {
   text-align: center;
   display: block;
-  overflow: hidden;
   width: 100%;
   height: 100%;
 }
+
+.bn-1 {
+  margin: 80px;
+  border: red solid 1px;
+}
+
+
 /* 커스텀 끝 */
