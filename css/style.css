@@ -55,9 +55,31 @@ a {
   margin-right: auto;
 }
 
+.con {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-box > img {
+  display: block;
+  width: 100%;
+}
+
+.cell {
+  float: left;
+  box-sizing:border-box;
+}
+
+.row::after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
 /* Custom */
 .con {
-  width: 1200px;
+  max-width: 1200px;
   color: #333333;
   font-weight: 500;
 }
@@ -85,7 +107,7 @@ body {
 .con > .top-bar > ul li {
   padding: 0 12px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: right;
   margin-top: 10px;
 }
@@ -169,10 +191,75 @@ body {
   height: 100%;
 }
 
-.bn-1 {
-  margin: 80px;
-  border: red solid 1px;
+/* 친구초대 광고배너 */
+.bn-1 > img {
+  margin: 80px 0;
+  width: 1200px;
 }
 
+/* 리스트 아이템 */
+.list1 .cell {
+  width: 25%;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+} 
+
+.list1 .cell > .product-name {
+  font-weight: 300;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.list1 .row {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 0;
+  
+}
+
+@media ( max-width: 1000px ) {
+  .list1 .cell {
+    width: calc(100% / 3);
+  }
+}
+
+@media ( max-width: 780px ) {
+  .list1 .cell {
+    width: 50%;
+  }
+}
+
+@media ( max-width: 480px ) {
+  .list1 .cell {
+    width: 100%;
+  }
+}
+
+.copy {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.top-bn-box {
+  overflow: hidden;
+  margin-top: -255px;
+}
+
+@media ( max-width: 700px ) {
+  .top-bn-box > .img-box {
+    margin-left: -50%;
+ }
+}
+
+/* SPECIAL EVENT */
+.special-event {
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+  margin: 100px 30px 0px 0px;
+}
 
 /* 커스텀 끝 */
