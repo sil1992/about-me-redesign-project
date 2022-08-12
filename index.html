@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>어바웃미 공식쇼핑몰 :: 어바웃미 | ABOUT ME</title>
     <script src="js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,26 +27,28 @@
       </ul>
     </div>
 
-    <!-- 탑 로고 -->
-    <div class="text-center top-logo">
-      <a href="">
-        <img src="https://i.postimg.cc/kGvdNk4W/image.png" alt="어바웃미">
-      </a>
-    <!-- 검색 영역 -->
-      <div class="input-box">
+    <!-- 탑 로고 및 검색영역 -->
+    <div class="top-section inline-grid">
+      <div class="top-logo">
+        <a href="">
+          <img src="https://i.postimg.cc/kGvdNk4W/image.png" alt="어바웃미">
+        </a>
+      </div>
+      <div class="input-box text-center">
         <div class="input-box__placeholder">
           <label for="search">💓 “짠하게 짠” 쌀막걸리 라인 출시
-            <button id="searchSubmit">검색</button>
           </label>
           <input type="text" id="search">
+          <button id="searchSubmit">검색</button>
         </div>
+      </div>
+      <div class="top-section-2 inline-grid">
+        <div class="Recent_Search"><a href=""><img src="https://i.postimg.cc/SRDRgt9H/image.png"></a></div>
+        <div class="Customer_Service"><a href=""><img src="https://i.postimg.cc/pr2yYtmD/image.png"></a></div>
+        <div class="Q_and_A"><a href="">Q&A</a></div>
       </div>
     </div>
 
-    <!--<div class="search_box">
-      <div class="search_area">
-        </div>
-      </div>-->
 
     <!-- 상단 메뉴(2) 공간 -->
     <div class="inline-grid text-center">
@@ -141,9 +144,23 @@
           <div class="product-text">카카오톡 채널 추가해 주시는 모든 분께<br>
             5,000P를 드립니다!</div>
         </li>
+      </ul>
+    </li>
+
+    <!-- Review area -->
+    <div class="con section_4">
+      <div class="Review_area">REAR REVIEW</div>
+      <div class="review_box">
+        <li class="review-list inline-grid text-center">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </li>
+      </div>
+    </div>
   </header>
-
-
 
 
 
