@@ -420,7 +420,7 @@ button, input[type=submit] {
   font-weight: 500;
   text-align: center;
   margin-top: 120px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .review_box > .review-list {
@@ -434,6 +434,53 @@ button, input[type=submit] {
   height: 367px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+/* instar_area */
+.instar_area {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.instar_box > .instar-list div {
+  width: 237px;
+  height: 237px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 150px;
+  border: red solid 1px;
+}
+
+.instar_box > .instar-list div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+.footer-line {
+  border: #dfdfdf solid 0.1px;
+}
+
+.footer {
+  background-color: #F9F8F7;
+}
+
+.footer .footer-text {
+  margin-top: 150px;
+  padding-bottom: 150px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 1200px;
+  margin-left: 360px;
+  margin-right: 360px;
+}
+
+.footer-logo > img {
+  margin-bottom: 20px;
 }
 
 /* 커스텀 끝 */
