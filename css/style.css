@@ -268,7 +268,7 @@ input[type=submit] {
 }
 
 .top-slider>.con>img {
-  width: 100%;
+  min-width: 1200px;
   display: block;
 }
 
@@ -338,7 +338,7 @@ input[type=submit] {
 }*/
 
 /* section_2 */
-.section_3 {
+.main-text {
   font-size: 33px;
   font-weight: 700;
   text-align: center;
@@ -389,7 +389,7 @@ input[type=submit] {
 }
 
 .bn-2>.con>img {
-  width: 100%;
+  min-width: 1200px;
   display: block;
 }
 
