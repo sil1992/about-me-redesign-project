@@ -220,20 +220,25 @@ input[type=submit] {
   min-width: 1200px;
   border-top: 1px solid #DFDFDF;
   border-bottom: 2px solid #333333;
+
+}
+
+.menu-2 {
+  margin-left: -75px;
+  margin-right: -75px;
 }
 
 .top-menu-2 li {
   position: relative;
+  padding: 25px 75px;
+  width: 16.6666%;
 }
 
 /* top-menu-2의 모든 아이템 텍스트 */
-.top-menu-2 li>a {
+.top-menu-2 li a {
   font-size: 16px;
   color: #333333;
   white-space: nowrap;
-  margin: 0 56px;
-  padding: 25px 0px;
-  display: block;
 }
 
 /* top-menu-2의 서브메뉴-1 */
@@ -276,33 +281,47 @@ input[type=submit] {
 }
 
 /* 친구초대 광고배너 */
-.bn-1>.con>img {
-  margin: 80px 0;
+.bn-1>.con>a>img {
+  margin: 120px 0;
   width: 1200px;
 }
 
-/* list_1 */
-.list1 .cell {
+/* section-1 */
+.section_1 .cell {
   width: 25%;
   cursor: pointer;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 40px;
 }
 
-.list1 .cell>.product-name {
+.section_1 .product-name {
   font-weight: 300;
   text-align: left;
   margin-top: 10px;
 }
 
-.list1 .row {
-  margin-left: -10px;
-  margin-right: -10px;
+.section_1 .row {
+  position: relative;
+  margin-left: -16px;
+  margin-right: -16px;
   padding-left: 0;
-
 }
 
+.section_1_line {
+  width: 1px;
+  height: 507px;
+  display: block;
+  background-color: #ddd;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+}
+
+#cell-2 {
+  padding-right: 15px;
+  border: yellow solid 3px;
+}
 /*
 @media ( max-width: 1000px ) {
   .list1,.list2,.list3 .cell {
@@ -396,7 +415,7 @@ input[type=submit] {
   display: block;
 }
 
-/* list_3 */
+/* section_3 : list_3 */
 .list3 .cell {
   width: 50%;
   cursor: pointer;
@@ -435,17 +454,22 @@ input[type=submit] {
   margin-bottom: 40px;
 }
 
-.review_box>.review-list {
-  padding-left: 10px;
-  padding-right: 10px;
+.review-list {
+border: red solid 3px;
 }
 
 .review_box>.review-list div {
   border: #dfdfdf solid 1px;
-  width: 215px;
+  cursor: pointer;
+  width: 20%;
   height: 367px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.review_box>.review-list div img {
+  width: 100%;
+  border: red solid 3px;
 }
 
 /* instar_area */
@@ -455,16 +479,12 @@ input[type=submit] {
   text-align: left;
   margin-top: 100px;
   margin-bottom: 20px;
-  margin-left: 5px;
 }
 
 .instar_box>.instar-list div {
-  width: 237px;
-  height: 237px;
-  padding-left: 10px;
-  padding-right: 10px;
+  cursor: pointer;
+  width: 20%;
   margin-bottom: 150px;
-  border: red solid 1px;
 }
 
 .instar_box>.instar-list div img {
@@ -473,12 +493,10 @@ input[type=submit] {
 }
 
 /* footer */
-.footer-line {
-  border: #dfdfdf solid 0.1px;
-}
-
 .footer {
   background-color: #F9F8F7;
+  border-top: 1px solid #dfdfdf;
+  min-width: 1200px;
 }
 
 .footer .footer-text {
@@ -486,9 +504,6 @@ input[type=submit] {
   padding-bottom: 150px;
   font-size: 14px;
   font-weight: 400;
-  width: 1200px;
-  margin-left: 360px;
-  margin-right: 360px;
 }
 
 .footer-logo>img {
