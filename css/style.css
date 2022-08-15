@@ -280,6 +280,50 @@ input[type=submit] {
   display: block;
 }
 
+.slider-box-1 {
+  height: 630px;
+  position: relative;
+}
+
+.slider-box-1 > .slides > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.slide-box-1 > .slides > div > img {
+  display: block;
+  width: 100%;
+}
+
+.slider-box-1[data-index="0"] > .slides > div:nth-child(1) {
+  opacity: 1;
+}
+
+.slider-box-1[data-index="1"] > .slides > div:nth-child(2) {
+  opacity: 1;
+}
+
+.slider-box-1[data-index="2"] > .slides > div:nth-child(3) {
+  opacity: 1;
+}
+
+.slider-box-1[data-index="3"] > .slides > div:nth-child(4) {
+  opacity: 1;
+}
+
+.slider-box-1[data-index="4"] > .slides > div:nth-child(5) {
+  opacity: 1;
+}
+
+.slider-box-1[data-index="5"] > .slides > div:nth-child(6) {
+  opacity: 1;
+}
+
 /* 친구초대 광고배너 */
 .bn-1>.con>a>img {
   margin: 120px 0;
